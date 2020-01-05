@@ -10,7 +10,7 @@ public class LoginTestHW extends TestBase {
     @Test
     public void testLogIn() throws InterruptedException {
         logIn();
-        pause(8000);
+        pause(1000);
         Assert.assertTrue(isAvatarPresentOnHeader());
     }
 

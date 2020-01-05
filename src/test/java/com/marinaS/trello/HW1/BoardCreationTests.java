@@ -1,7 +1,7 @@
 package com.marinaS.trello.HW1;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -16,20 +16,31 @@ public class BoardCreationTests extends TestBase {
     }
 
     @Test
-    public void addBoard(){
-        String boardName = "TestTest";
-        wd.findElement(By.xpath("//div[@class='board-tile mod-add']")).click();
-        wd.findElement(By.cssSelector("[data-test-id='create-board-title-input']")).click();
-        wd.findElement(By.cssSelector("[data-test-id='create-board-title-input']")).sendKeys(boardName);
+    public void addBoardFromHomePage(){
         pause(1000);
-        wd.findElement(By.cssSelector("[data-test-id='create-board-submit-button']")).click();
-        Assert.assertTrue(isBoardPresent(boardName));
+        int before = getBoardsCount();
+        String boardName = "Test1";
+        clickOnCreateNewBoardLinkFromHomePage();
+        pause(1000);
+        typeNameNewBoard(boardName);
+        pause(1000);
+        clickOnCreateNewBoardSubmitButton();
+        pause(1000);
+        returnToHomePage();
+
+        pause(1000);
+        int after = getBoardsCount();
+        Assert.assertEquals(after, before + 1);
     }
 
-    public boolean isBoardPresent(String boardName){
-        return isElementPresent(By.cssSelector("[title='" + boardName +"']"));
-    }
+        @AfterClass
+    public void postActions(){
+        int boardsCount = getBoardsCount();
+        while (boardsCount > 4){
+            deleteBoard();
 
-
+            boardsCount = getBoardsCount();
+        }
+        }
 
 }

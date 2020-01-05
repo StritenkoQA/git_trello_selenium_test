@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Trello" verbose="1" >
+    <test name="Regression" >
+        <classes>
+            <class name="com.marinaS.trello.HW1.LoginTestHW" />
+            <class name="com.marinaS.trello.HW1.BoardCreationTests" />
+
+        </classes>
+    </test>
+</suite>
