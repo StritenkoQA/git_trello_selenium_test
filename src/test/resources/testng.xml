@@ -5,6 +5,7 @@
         <classes>
             <class name="com.marinaS.trello.HW1.LoginTestHW" />
             <class name="com.marinaS.trello.HW1.BoardCreationTests" />
+            <class name="com.marinaS.trello.HW1.BoardDeleteTest" />
 
         </classes>
     </test>

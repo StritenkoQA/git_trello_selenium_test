@@ -8,28 +8,28 @@ public class BoardDeleteTest extends TestBase {
 
     @BeforeMethod
     public void ensurePreconditions() throws InterruptedException {
-        if (!isAvatarPresentOnHeader()) {
-            logIn();
+        if (!app.isAvatarPresentOnHeader()) {
+            app.logIn();
         }
-        if(!isThereBoard()){
-            createBoard();
+        if(!app.isThereBoard()){
+            app.createBoard();
         }
     }
 
 
     @Test
     public void deleteFirstBoardTest () {
-        pause(1000);
-        int before = getBoardsCount();
-        openFirstBoard();
-        pause(1000);
-        clickOnMoreLink();
-        clickOnCloseBoardLink();
-        clickOnConfirmCloseBoard();
-        permanentlyDeleteBoard();
-        returnToHomePage();
+        app.pause(1000);
+        int before = app.getBoardsCount();
+        app.openFirstBoard();
+        app.pause(1000);
+        app.clickOnMoreLink();
+        app.clickOnCloseBoardLink();
+        app.clickOnConfirmCloseBoard();
+        app.permanentlyDeleteBoard();
+        app.returnToHomePage();
 
-        int after = getBoardsCount();
+        int after = app.getBoardsCount();
         Assert.assertEquals(after, before - 1);
     }
 

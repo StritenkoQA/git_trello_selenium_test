@@ -10,36 +10,36 @@ public class BoardCreationTests extends TestBase {
 
     @BeforeMethod
     public void ensurePreconditions() throws InterruptedException {
-        if(!isAvatarPresentOnHeader()){
-            logIn();
+        if(!app.isAvatarPresentOnHeader()){
+            app.logIn();
         }
     }
 
     @Test
     public void addBoardFromHomePage(){
-        pause(1000);
-        int before = getBoardsCount();
+        app.pause(1000);
+        int before = app.getBoardsCount();
         String boardName = "Test1";
-        clickOnCreateNewBoardLinkFromHomePage();
-        pause(1000);
-        typeNameNewBoard(boardName);
-        pause(1000);
-        clickOnCreateNewBoardSubmitButton();
-        pause(1000);
-        returnToHomePage();
+        app.clickOnCreateNewBoardLinkFromHomePage();
+        app.pause(1000);
+        app.typeNameNewBoard(boardName);
+        app.pause(1000);
+        app.clickOnCreateNewBoardSubmitButton();
+        app.pause(1000);
+        app.returnToHomePage();
 
-        pause(1000);
-        int after = getBoardsCount();
+        app.pause(1000);
+        int after = app.getBoardsCount();
         Assert.assertEquals(after, before + 1);
     }
 
         @AfterClass
     public void postActions(){
-        int boardsCount = getBoardsCount();
+        int boardsCount = app.getBoardsCount();
         while (boardsCount > 4){
-            deleteBoard();
+            app.deleteBoard();
 
-            boardsCount = getBoardsCount();
+            boardsCount = app.getBoardsCount();
         }
         }
 
