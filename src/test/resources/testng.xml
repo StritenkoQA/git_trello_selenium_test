@@ -3,10 +3,10 @@
 <suite name="Trello" verbose="1" >
     <test name="Regression" >
         <classes>
-            <class name="com.marinaS.trello.HW1.LoginTestHW" />
-            <class name="com.marinaS.trello.HW1.BoardCreationTests" />
-            <class name="com.marinaS.trello.HW1.BoardDeleteTest" />
-
+            <class name="com.marinaS.trello.HW1.tests.LoginTestHW" />
+            <class name="com.marinaS.trello.HW1.tests.BoardCreationTests" />
+            <class name="com.marinaS.trello.HW1.tests.BoardDeleteTest" />
+            <class name="com.marinaS.trello.HW1.tests.TeamCreationTestFromHomePage" />
         </classes>
     </test>
 </suite>

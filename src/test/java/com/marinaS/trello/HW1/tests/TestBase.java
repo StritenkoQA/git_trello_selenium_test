@@ -1,5 +1,6 @@
-package com.marinaS.trello.HW1;
+package com.marinaS.trello.HW1.tests;
 
+import com.marinaS.trello.HW1.manager.ApplicationManager;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
@@ -13,7 +14,7 @@ public class TestBase {
     }
 
     @AfterSuite
-        public void tearDown () {
+    public void tearDown() {
         app.stop();
     }
 
