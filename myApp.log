@@ -1,0 +1,4 @@
+2020-01-22 20:36:35,080 INFO [Test worker] c.m.t.H.t.TestBase [TestBase.java:20] Start test testLogIn
+2020-01-22 20:37:03,201 INFO [Test worker] c.m.t.H.t.TestBase [TestBase.java:25] Stop test testLogIn
+2020-01-22 20:41:35,515 INFO [Test worker] c.m.t.H.t.TestBase [TestBase.java:20] Start test testLogIn
+2020-01-22 20:42:01,294 INFO [Test worker] c.m.t.H.t.TestBase [TestBase.java:25] Stop test testLogIn

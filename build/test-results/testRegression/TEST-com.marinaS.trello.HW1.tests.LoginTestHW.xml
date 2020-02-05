@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.marinaS.trello.HW1.tests.LoginTestHW" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-02-05T12:50:09" hostname="LAPTOP-TE88LQFD" time="42.383">
+<testsuite name="com.marinaS.trello.HW1.tests.LoginTestHW" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-02-05T14:34:57" hostname="LAPTOP-TE88LQFD" time="34.338">
   <properties/>
-  <testcase name="testLogIn" classname="com.marinaS.trello.HW1.tests.LoginTestHW" time="42.383">
+  <testcase name="testLogIn" classname="com.marinaS.trello.HW1.tests.LoginTestHW" time="34.338">
     <failure message="java.lang.AssertionError: did not expect to find [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: did not expect to find [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.failNotEquals(Assert.java:969)
@@ -63,12 +63,12 @@
 	at java.lang.Thread.run(Thread.java:748)
 </failure>
   </testcase>
-  <system-out><![CDATA[14:50:09.000 [Test worker] INFO  c.marinaS.trello.HW1.tests.TestBase - Start test testLogInwith parameters[]
-14:50:51.393 [Test worker] ERROR c.marinaS.trello.HW1.utils.Listener - testLogIn Failed
+  <system-out><![CDATA[16:34:57.666 [Test worker] INFO  c.marinaS.trello.HW1.tests.TestBase - Start test testLogInwith parameters[]
+16:35:32.013 [Test worker] ERROR c.marinaS.trello.HW1.utils.Listener - testLogIn Failed
 java.lang.AssertionError: did not expect to find [true] but found [false]
-14:50:52.168 [Test worker] INFO  c.marinaS.trello.HW1.utils.Listener - 
-Created screenshot: C:\Users\strit\Documents\GitHub\git_trello_selenium_test\src\test\screenshots\screen-1580907052157.png
-14:50:52.170 [Test worker] INFO  c.marinaS.trello.HW1.tests.TestBase - Stop test testLogIn
+16:35:32.813 [Test worker] INFO  c.marinaS.trello.HW1.utils.Listener - 
+Created screenshot: C:\Users\strit\Documents\GitHub\git_trello_selenium_test\src\test\screenshots\screen-1580913332736.png
+16:35:32.814 [Test worker] INFO  c.marinaS.trello.HW1.tests.TestBase - Stop test testLogIn
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
