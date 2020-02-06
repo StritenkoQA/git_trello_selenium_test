@@ -15,7 +15,7 @@ public class HeaderHelper extends HelperBase {
 
     public boolean isAvatarPresentOnHeader() {
         return isElementPresent
-                (By.cssSelector("[data-test-id='header-member-menu-butto']"));
+                (By.cssSelector("[data-test-id='header-member-menu-button']"));
     }
 
     public void  clickOnAvatar(){
